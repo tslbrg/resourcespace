@@ -7,7 +7,7 @@ services:
       - mariadb
     volumes:
       - filestore:/var/www/html/filestore
-      - ./config.php:/var/www/html/include/config.php
+      - config:/var/www/html/include/config.php
     networks:
       - frontend
       - backend
@@ -33,3 +33,4 @@ networks:
 volumes:
   mariadb:
   filestore:
+  config:
