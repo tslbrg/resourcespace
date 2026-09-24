@@ -8,6 +8,8 @@ services:
     volumes:
       - filestore:/var/www/html/filestore
       - rs_config:/var/www/html/config-data
+    expose:
+      - "80"
     networks:
       - frontend
       - backend
